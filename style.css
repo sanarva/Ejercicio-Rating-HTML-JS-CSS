@@ -1,0 +1,54 @@
+/*Reseteamos márgenes y fuentes*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+variable,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100 %;
+    font-weight: normal;
+}
+
+/*Aplico estilos*/
+html {
+    font-size: 500%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row-reverse;
+}
+
+.originPaw {
+    color: royalblue;
+    margin: 1%;
+}
+
+.activePaw {
+    color: mediumvioletred;
+}
+
+/*Con esto hacemos el efecto hover para que se aplique a todos los hermanos posteriores y, como aplica a los posteriores, le hemos puesto un reverse en el contenedor padre (flex-direction:row-reverse)*/
+i:hover,
+.originPaw:hover ~ i {
+    color: mediumvioletred;
+
+}
